@@ -1,0 +1,217 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Stonex Industrial – Accelerated Mobile Page</title>
+  <link rel="canonical" href="./" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  
+  <!-- AMP Boilerplate Styles -->
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+  
+  <style amp-custom>
+    /* Custom styles for AMP version of Stonex */
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d1117;
+      color: #f8fafc;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    
+    .amp-header {
+      background: #0d1117;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-text {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      color: #f97316;
+      letter-spacing: 1.5px;
+    }
+    
+    .btn-canonical {
+      background: #f97316;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    /* Hero */
+    .amp-hero {
+      position: relative;
+      padding: 80px 24px;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(13, 17, 23, 0.95), rgba(17, 24, 39, 0.85));
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(249, 115, 22, 0.12);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      color: #f97316;
+      border-radius: 100px;
+      padding: 4px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 32px;
+      line-height: 1.2;
+      font-weight: 800;
+      margin: 0 0 16px 0;
+    }
+    .hero-highlight {
+      color: #f97316;
+    }
+    .hero-desc {
+      font-size: 15px;
+      color: #94a3b8;
+      max-width: 500px;
+      margin: 0 auto 24px auto;
+    }
+    
+    /* Services Section */
+    .amp-section {
+      padding: 48px 16px;
+    }
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .section-desc {
+      font-size: 14px;
+      color: #94a3b8;
+      text-align: center;
+      margin-bottom: 32px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .card-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+    .card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 8px 0;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: #94a3b8;
+      margin: 0;
+    }
+    
+    .footer {
+      background: #090d13;
+      padding: 32px 16px;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 13px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- AMP Navbar -->
+  <header class="amp-header">
+    <div class="logo">
+      <span class="logo-text">STONEX INDUSTRIAL</span>
+    </div>
+    <a href="./" class="btn-canonical">Full Website</a>
+  </header>
+
+  <!-- AMP Hero Section -->
+  <section class="amp-hero">
+    <span class="hero-badge">⚡ AMP Ultra-Fast</span>
+    <h1 class="hero-title">Powering Industry, One <span class="hero-highlight">Solution</span> at a Time</h1>
+    <p class="hero-desc">Your premium partner for heavy equipment rentals, civil material supply, specialized engineering tools, and certified PPE gear.</p>
+    <a href="tel:+966500000000" class="btn-canonical" style="display:inline-block; padding:12px 24px; font-size:14px">📞 Call Contact Desk</a>
+  </section>
+
+  <!-- AMP Why Choose Us Section -->
+  <section class="amp-section" style="background:#111827">
+    <h2 class="section-title">Your Trusted Industrial Partner</h2>
+    <p class="section-desc">We go beyond supplying products — we build long-term partnerships based on trust, quality, and service excellence.</p>
+    
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3 class="card-title">Quality Assured</h3>
+        <p class="card-desc">Every product is sourced from certified manufacturers and tested to meet international quality and safety standards.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3 class="card-title">Fast Delivery</h3>
+        <p class="card-desc">Our logistics network ensures prompt, reliable delivery to your project site — even for bulk and urgent orders.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">👥</div>
+        <h3 class="card-title">Expert Team</h3>
+        <p class="card-desc">Our team of industry experts provides technical consultation and support to help you choose the right products.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💰</div>
+        <h3 class="card-title">Competitive Pricing</h3>
+        <p class="card-desc">We offer transparent, market-competitive pricing for all services with no hidden costs or surprises.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Stonex Industrial Trading & Equipment Solutions. All Rights Reserved.</p>
+    <p style="margin-top:8px">Powered by Google AMP technology.</p>
+  </footer>
+
+</body>
+</html>

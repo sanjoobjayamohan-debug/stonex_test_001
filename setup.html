@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stonex Admin Setup</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .setup-card {
+      background: #1a1d27;
+      border: 1px solid #2d3148;
+      border-radius: 12px;
+      padding: 32px;
+      width: 440px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: #f97316;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 14px;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 6px;
+      color: #cbd5e1;
+    }
+    input {
+      width: 100%;
+      background: #21263a;
+      border: 1px solid #2d3148;
+      border-radius: 6px;
+      padding: 10px 14px;
+      color: #fff;
+      font-size: 14px;
+      box-sizing: border-box;
+      outline: none;
+    }
+    input:focus {
+      border-color: #f97316;
+    }
+    button {
+      width: 100%;
+      background: #f97316;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+    button:hover {
+      background: #ea580c;
+    }
+    #init-log {
+      margin-top: 24px;
+      background: #0f1117;
+      border-radius: 6px;
+      padding: 16px;
+      font-family: monospace;
+      font-size: 12px;
+      max-height: 200px;
+      overflow-y: auto;
+      border: 1px solid #2d3148;
+    }
+    .dashboard-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: #f97316;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="setup-card">
+    <h1>Stonex Website Seeder & Admin Setup</h1>
+    <p>Enter the credentials you want to use to log into the admin dashboard. This will also seed all default content into your Firestore Database.</p>
+
+    <div class="form-group">
+      <label for="admin-email">Desired Admin Email</label>
+      <input type="email" id="admin-email" value="stonexmeopr@gmail.com" />
+    </div>
+    <div class="form-group">
+      <label for="admin-password">Desired Password</label>
+      <input type="password" id="admin-password" value="12345" />
+    </div>
+
+    <button onclick="runSeeder()">Run Setup & Database Seeder</button>
+
+    <div id="init-log">Waiting to run setup…</div>
+
+    <div style="text-align: center;">
+      <a href="admin/index.html" class="dashboard-link">Go to Admin Dashboard →</a>
+    </div>
+  </div>
+
+  <script type="module">
+    import { runInitialization } from "./initialize-project.js";
+    window.runSeeder = function() {
+      const email = document.getElementById('admin-email').value.trim();
+      const password = document.getElementById('admin-password').value;
+      const logEl = document.getElementById('init-log');
+
+      if (!email || password.length < 5) {
+        if (logEl) {
+          logEl.innerHTML = `<div style="color: #ef4444;">❌ Please enter a valid email and a password with at least 5 characters.</div>`;
+        }
+        return;
+      }
+      runInitialization(email, password);
+    }
+  </script>
+</body>
+</html>

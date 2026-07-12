@@ -1,0 +1,6 @@
+{
+  "name": "Stonex Industrial Solutions",
+  "description": "Industrial trading, heavy equipment rentals, civil material supply, and PPE products.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

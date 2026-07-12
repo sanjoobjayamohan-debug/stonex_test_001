@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - Stonex Industrial Solutions</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏢</text></svg>" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOPBAR & HEADER ===== -->
+  <div class="topbar" id="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-info">
+        <span id="topbar-phone-wrap">📞 <span id="topbar-phone">+966 50 000 0000</span></span>
+        <span id="topbar-hours-wrap">🕐 <span id="topbar-hours">Sun–Thu: 8:00 AM – 6:00 PM</span></span>
+      </div>
+      <div class="topbar-social">
+        <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <!-- Logo -->
+        <a href="index.html" class="logo" id="logo-link">
+          <div class="logo-icon">
+            <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+              <polygon points="20,2 38,35 2,35" fill="url(#logoGrad)" />
+              <defs>
+                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#F97316"/>
+                  <stop offset="100%" style="stop-color:#DC2626"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">STONEX</span>
+            <span class="logo-tagline">Industrial Solutions</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="products.html" class="nav-link active" id="nav-products">Products</a></li>
+          <li><a href="whyus.html" class="nav-link" id="nav-why-us">Why Us</a></li>
+          <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="nav-search-container" id="nav-search-container-desktop">
+          <form class="nav-search-form" id="nav-search-form-desktop" action="products.html" method="GET">
+            <input type="text" class="nav-search-input" id="nav-search-input-desktop" name="search" placeholder="Search..." required autocomplete="off" />
+            <button type="submit" class="nav-search-btn" id="nav-search-btn-desktop" aria-label="Search">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+          <!-- Suggestions Dropdown -->
+          <div class="nav-search-suggestions" id="nav-search-suggestions-desktop" hidden></div>
+        </div>
+
+        <!-- CTA -->
+        <a href="contact.html" class="btn btn-primary nav-cta" id="nav-cta-btn">Get a Quote</a>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="navigation" aria-hidden="true">
+    <div class="mobile-search-container" id="nav-search-container-mobile">
+      <form class="nav-search-form" id="nav-search-form-mobile" action="products.html" method="GET">
+        <input type="text" class="nav-search-input" id="nav-search-input-mobile" name="search" placeholder="Search products or services..." required autocomplete="off" />
+        <button type="submit" class="nav-search-btn" id="nav-search-btn-mobile" aria-label="Search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.655"></line></svg>
+        </button>
+      </form>
+      <!-- Suggestions Dropdown -->
+      <div class="nav-search-suggestions" id="nav-search-suggestions-mobile" hidden></div>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link" id="mobile-nav-home">Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link" id="mobile-nav-services">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link" id="mobile-nav-about">About Us</a></li>
+      <li><a href="products.html" class="mobile-nav-link active" id="mobile-nav-products">Products</a></li>
+      <li><a href="whyus.html" class="mobile-nav-link" id="mobile-nav-why">Why Us</a></li>
+      <li><a href="contact.html" class="mobile-nav-link" id="mobile-nav-contact">Contact</a></li>
+      <li><a href="contact.html" class="btn btn-primary" id="mobile-nav-quote">Get a Quote</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== PRODUCTS CONTENT ===== -->
+  <main style="padding-top: 10px;">
+    <!-- Banner -->
+    <section class="products-banner" style="background: linear-gradient(rgba(15,23,42,0.9), rgba(15,23,42,0.95)), url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover; padding: 100px 0 60px 0; text-align: center; color: #fff;">
+      <div class="container">
+        <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 700; margin-bottom: 12px; color: #fff;">Our Industrial Product Range</h1>
+        <p style="font-size: 18px; color: var(--text-muted); max-width: 600px; margin: 0 auto;">Browse our extensive catalogs of civil construction materials, mechanical components, electrical assets, certified PPE, and rentals.</p>
+      </div>
+    </section>
+
+    <!-- Product Range & Showcase -->
+    <section class="products section" id="products" style="background: var(--dark); padding: 60px 0;">
+      <div class="container">
+        <!-- Interactive search bar and filters -->
+        <div style="background: var(--surface); border: 1px solid var(--border); padding: 20px; border-radius: var(--radius); margin-bottom: 40px; display: flex; flex-direction: column; gap: 15px;">
+          <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; color: var(--text);">Search & Filter Products</h4>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <input type="text" id="product-search-input" placeholder="Search product name or keyword (e.g. cement, cables, boots)..." style="flex: 1; min-width: 280px; background: var(--dark); border: 1px solid var(--border); padding: 10px 16px; border-radius: 6px; color: var(--text); font-size: 14px;" oninput="filterProducts()" />
+            <select id="product-category-filter" style="background: var(--dark); border: 1px solid var(--border); padding: 10px 16px; border-radius: 6px; color: var(--text); font-size: 14px;" onchange="filterCategory(this.value)">
+              <option value="all">All Categories</option>
+              <option value="civil">Civil Items</option>
+              <option value="mechanical">Mechanical</option>
+              <option value="electrical">Electrical</option>
+              <option value="ppe">PPE Items</option>
+              <option value="equipment">Equipment Rentals</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-tabs" id="products-tabs" style="margin-bottom: 30px;">
+          <button class="tab-btn active" data-tab="civil" id="tab-civil">Civil Items</button>
+          <button class="tab-btn" data-tab="mechanical" id="tab-mechanical">Mechanical</button>
+          <button class="tab-btn" data-tab="electrical" id="tab-electrical">Electrical</button>
+          <button class="tab-btn" data-tab="ppe" id="tab-ppe">PPE</button>
+          <button class="tab-btn" data-tab="equipment" id="tab-equipment">Equipment</button>
+        </div>
+
+        <div class="tab-content-area">
+
+          <!-- Civil Panel -->
+          <div class="tab-panel active" id="panel-civil">
+            <div class="product-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
+              <div class="product-card" id="prod-cement">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" alt="Cement & Binders" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Cement & Binders</h4>
+                <p>OPC, PPC, and specialty cement grades</p>
+              </div>
+              <div class="product-card" id="prod-rebar">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Steel Rebar & TMT" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Steel Rebar & TMT</h4>
+                <p>Grade 500D, 550D rebar in all sizes</p>
+              </div>
+              <div class="product-card" id="prod-blocks">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Blocks & Bricks" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Blocks & Bricks</h4>
+                <p>Hollow, solid, and AAC blocks</p>
+              </div>
+              <div class="product-card" id="prod-pipes">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?auto=format&fit=crop&w=600&q=80" alt="PVC & HDPE Pipes" referrerPolicy="no-referrer" />
+                </div>
+                <h4>PVC & HDPE Pipes</h4>
+                <p>All diameters, pressure-rated</p>
+              </div>
+              <div class="product-card" id="prod-aggregates">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?auto=format&fit=crop&w=600&q=80" alt="Aggregates & Sand" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Aggregates & Sand</h4>
+                <p>Washed sand, crushed stone, gravel</p>
+              </div>
+              <div class="product-card" id="prod-formwork">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" alt="Formwork Systems" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Formwork Systems</h4>
+                <p>Plywood, panel, and system formwork</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mechanical Panel -->
+          <div class="tab-panel" id="panel-mechanical">
+            <div class="product-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
+              <div class="product-card" id="prod-pumps">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Industrial Pumps" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Industrial Pumps</h4>
+                <p>Centrifugal, submersible, booster pumps</p>
+              </div>
+              <div class="product-card" id="prod-valves">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="Valves & Fittings" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Valves & Fittings</h4>
+                <p>Ball, gate, check valves, flanges</p>
+              </div>
+              <div class="product-card" id="prod-bearings">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1617791160505-6f006e121980?auto=format&fit=crop&w=600&q=80" alt="Bearings & Seals" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Bearings & Seals</h4>
+                <p>SKF, FAG, NSK bearings in all types</p>
+              </div>
+              <div class="product-card" id="prod-fasteners">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Fasteners & Hardware" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Fasteners & Hardware</h4>
+                <p>Bolts, nuts, anchors, threaded rods</p>
+              </div>
+              <div class="product-card" id="prod-tools">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=600&q=80" alt="Hand & Power Tools" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Hand & Power Tools</h4>
+                <p>Professional grade tools for all trades</p>
+              </div>
+              <div class="product-card" id="prod-hoses">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Hoses & Couplings" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Hoses & Couplings</h4>
+                <p>Hydraulic, pneumatic, water hoses</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Electrical Panel -->
+          <div class="tab-panel" id="panel-electrical">
+            <div class="product-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
+              <div class="product-card" id="prod-cables">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=600&q=80" alt="Cables & Wires" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Cables & Wires</h4>
+                <p>Power, control, instrumentation cables</p>
+              </div>
+              <div class="product-card" id="prod-switchgear">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1498084393753-b411b2d26b34?auto=format&fit=crop&w=600&q=80" alt="Switchgear & Panels" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Switchgear & Panels</h4>
+                <p>MCBs, MCCBs, ACBs, distribution boards</p>
+              </div>
+              <div class="product-card" id="prod-motors">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=600&q=80" alt="Electric Motors" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Electric Motors</h4>
+                <p>IE3, ATEX, VFD-compatible motors</p>
+              </div>
+              <div class="product-card" id="prod-lighting">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80" alt="Industrial Lighting" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Industrial Lighting</h4>
+                <p>LED, explosion-proof, floodlights</p>
+              </div>
+              <div class="product-card" id="prod-conduit">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?auto=format&fit=crop&w=600&q=80" alt="Conduit & Trunking" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Conduit & Trunking</h4>
+                <p>GI, PVC, flexible conduit systems</p>
+              </div>
+              <div class="product-card" id="prod-instrumentation">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Instrumentation" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Instrumentation</h4>
+                <p>Sensors, transmitters, gauges</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PPE Panel -->
+          <div class="tab-panel" id="panel-ppe">
+            <div class="product-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
+              <div class="product-card" id="prod-helmets">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=600&q=80" alt="Safety Helmets" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Safety Helmets</h4>
+                <p>Class A, B, C rated hard hats</p>
+              </div>
+              <div class="product-card" id="prod-vests">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80" alt="Hi-Vis Clothing" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Hi-Vis Clothing</h4>
+                <p>Class 2 &amp; 3 reflective vests, coveralls</p>
+              </div>
+              <div class="product-card" id="prod-gloves">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1590105577767-e21a1067899f?auto=format&fit=crop&w=600&q=80" alt="Safety Gloves" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Safety Gloves</h4>
+                <p>Cut-resistant, chemical, welding gloves</p>
+              </div>
+              <div class="product-card" id="prod-eyewear">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140e2b8?auto=format&fit=crop&w=600&q=80" alt="Eye &amp; Face Protection" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Eye &amp; Face Protection</h4>
+                <p>Goggles, face shields, welding visors</p>
+              </div>
+              <div class="product-card" id="prod-footwear">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Safety Footwear" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Safety Footwear</h4>
+                <p>Steel toe, composite, chemical-resistant</p>
+              </div>
+              <div class="product-card" id="prod-fall">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=600&q=80" alt="Fall Protection" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Fall Protection</h4>
+                <p>Harnesses, lanyards, anchor systems</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Equipment Panel -->
+          <div class="tab-panel" id="panel-equipment">
+            <div class="product-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;">
+              <div class="product-card" id="prod-excavator">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1579684389782-64d84b5e901a?auto=format&fit=crop&w=600&q=80" alt="Excavators" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Excavators</h4>
+                <p>Mini to large class, tracked &amp; wheeled</p>
+              </div>
+              <div class="product-card" id="prod-crane">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=600&q=80" alt="Mobile Cranes" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Mobile Cranes</h4>
+                <p>15T–200T capacity range</p>
+              </div>
+              <div class="product-card" id="prod-forklift">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80" alt="Forklifts" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Forklifts</h4>
+                <p>Electric, diesel, 3T–20T capacity</p>
+              </div>
+              <div class="product-card" id="prod-compactor">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1619542402915-dcaf30e4e2a1?auto=format&fit=crop&w=600&q=80" alt="Compactors" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Compactors</h4>
+                <p>Plate, rammer, and road rollers</p>
+              </div>
+              <div class="product-card" id="prod-generator">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&q=80" alt="Generators" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Generators</h4>
+                <p>20kVA–2000kVA, silenced sets</p>
+              </div>
+              <div class="product-card" id="prod-welder">
+                <div class="product-card-img-wrap">
+                  <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" alt="Welding Machines" referrerPolicy="no-referrer" />
+                </div>
+                <h4>Welding Machines</h4>
+                <p>Diesel and electric multi-process welders</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" id="footer-logo-link" style="margin-bottom:16px">
+            <div class="logo-icon">
+              <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                <polygon points="20,2 38,35 2,35" fill="url(#logoGradFoot)" />
+                <defs>
+                  <linearGradient id="logoGradFoot" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#F97316"/>
+                    <stop offset="100%" style="stop-color:#DC2626"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">STONEX</span>
+              <span class="logo-tagline">Industrial Solutions</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">Your trusted partner for industrial trading, heavy equipment rentals, civil material supply, and premium PPE products.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook" id="footer-fb" class="footer-social-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="LinkedIn" id="footer-li" class="footer-social-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" id="footer-link-industrial">Industrial Trading</a></li>
+            <li><a href="services.html" id="footer-link-equipment">Equipment Rental</a></li>
+            <li><a href="services.html" id="footer-link-civil">Civil Material Supply</a></li>
+            <li><a href="services.html" id="footer-link-ppe">PPE Items</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" id="footer-link-about">About Us</a></li>
+            <li><a href="products.html" id="footer-link-products">Products</a></li>
+            <li><a href="whyus.html" id="footer-link-why">Why Choose Us</a></li>
+            <li><a href="contact.html" id="footer-link-contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li>📞 <a href="tel:+966500000000" id="footer-phone">+966 50 000 0000</a></li>
+            <li>📧 <a href="mailto:info@stonextrading.com" id="footer-email">info@stonextrading.com</a></li>
+            <li>📍 Industrial Area, Al Jubail, Saudi Arabia</li>
+            <li>🕐 Sun–Thu: 8:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 Stonex Industrial Solutions. All rights reserved.</p>
+        <p>Designed for excellence in industrial service delivery.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CHATBOT TRIGGER & WIDGET ===== -->
+  <button class="chatbot-trigger" id="chatbot-trigger-btn" aria-label="Open Chat">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <div class="chatbot-tooltip">Need help? Ask Stonex AI!</div>
+  </button>
+
+  <div id="ai-chatbot-widget" class="ai-chatbot-hidden">
+    <div class="chatbot-header">
+      <div class="chatbot-info">
+        <span class="chatbot-avatar-dot"></span>
+        <div class="chatbot-header-text">
+          <h4 id="chatbot-widget-title">Stonex AI Assistant</h4>
+          <p class="chatbot-header-status">Online • Ready to help</p>
+        </div>
+      </div>
+      <button class="chatbot-close-btn" id="chatbot-close-btn" aria-label="Close Chat">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <!-- Beautiful Lead Form inside Chatbot -->
+    <div id="chatbot-lead-form-container" class="chatbot-lead-form-container">
+      <div class="lead-form-header" id="chatbot-lead-form-toggle">
+        <span class="lead-form-title">⚡ Leave Your Contact / Get Quote</span>
+        <svg class="lead-form-arrow" id="lead-form-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <form id="chatbot-lead-form" class="chatbot-lead-form">
+        <div class="lead-input-group">
+          <input type="text" id="lead-name" placeholder="Full Name" required />
+          <input type="text" id="lead-contact" placeholder="Contact/Phone" required />
+        </div>
+        <input type="text" id="lead-address" placeholder="Project / Delivery Address" required />
+        <button type="submit" class="btn-lead-submit">Submit Details</button>
+      </form>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Chat bubbles injected via script.js -->
+    </div>
+    <form class="chatbot-input-area" id="chatbot-input-form">
+      <input type="text" id="chatbot-input-field" placeholder="Ask something..." autocomplete="off" required />
+      <button type="submit" id="chatbot-send-btn" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <!-- Main JavaScript as Module -->
+  <script type="module" src="script.js"></script>
+
+  <!-- Interactive Search / Filter JS Logic -->
+  <script>
+    function filterProducts() {
+      const q = document.getElementById('product-search-input').value.toLowerCase();
+      const cards = document.querySelectorAll('.product-card');
+      
+      cards.forEach(card => {
+        const title = card.querySelector('h4').textContent.toLowerCase();
+        const desc = card.querySelector('p').textContent.toLowerCase();
+        if (title.includes(q) || desc.includes(q)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function filterCategory(cat) {
+      if (cat === 'all') {
+        document.querySelectorAll('.tab-panel').forEach(panel => {
+          panel.classList.add('active');
+          panel.style.display = 'block';
+        });
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      } else {
+        document.querySelectorAll('.tab-panel').forEach(panel => {
+          const id = panel.getAttribute('id');
+          if (id === `panel-${cat}`) {
+            panel.classList.add('active');
+            panel.style.display = 'block';
+          } else {
+            panel.classList.remove('active');
+            panel.style.display = 'none';
+          }
+        });
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          if (btn.dataset.tab === cat) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>

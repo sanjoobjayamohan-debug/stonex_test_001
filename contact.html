@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Stonex Industrial Solutions</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏢</text></svg>" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOPBAR & HEADER ===== -->
+  <div class="topbar" id="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-info">
+        <span id="topbar-phone-wrap">📞 <span id="topbar-phone">+966 50 000 0000</span></span>
+        <span id="topbar-hours-wrap">🕐 <span id="topbar-hours">Sun–Thu: 8:00 AM – 6:00 PM</span></span>
+      </div>
+      <div class="topbar-social">
+        <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <!-- Logo -->
+        <a href="index.html" class="logo" id="logo-link">
+          <div class="logo-icon">
+            <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+              <polygon points="20,2 38,35 2,35" fill="url(#logoGrad)" />
+              <defs>
+                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#F97316"/>
+                  <stop offset="100%" style="stop-color:#DC2626"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">STONEX</span>
+            <span class="logo-tagline">Industrial Solutions</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-about">About Us</a></li>
+          <li><a href="products.html" class="nav-link" id="nav-products">Products</a></li>
+          <li><a href="whyus.html" class="nav-link" id="nav-why-us">Why Us</a></li>
+          <li><a href="contact.html" class="nav-link active" id="nav-contact">Contact</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="nav-search-container" id="nav-search-container-desktop">
+          <form class="nav-search-form" id="nav-search-form-desktop" action="products.html" method="GET">
+            <input type="text" class="nav-search-input" id="nav-search-input-desktop" name="search" placeholder="Search..." required autocomplete="off" />
+            <button type="submit" class="nav-search-btn" id="nav-search-btn-desktop" aria-label="Search">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+          <!-- Suggestions Dropdown -->
+          <div class="nav-search-suggestions" id="nav-search-suggestions-desktop" hidden></div>
+        </div>
+
+        <!-- CTA -->
+        <a href="contact.html" class="btn btn-primary nav-cta" id="nav-cta-btn">Get a Quote</a>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="navigation" aria-hidden="true">
+    <div class="mobile-search-container" id="nav-search-container-mobile">
+      <form class="nav-search-form" id="nav-search-form-mobile" action="products.html" method="GET">
+        <input type="text" class="nav-search-input" id="nav-search-input-mobile" name="search" placeholder="Search products or services..." required autocomplete="off" />
+        <button type="submit" class="nav-search-btn" id="nav-search-btn-mobile" aria-label="Search">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.655"></line></svg>
+        </button>
+      </form>
+      <!-- Suggestions Dropdown -->
+      <div class="nav-search-suggestions" id="nav-search-suggestions-mobile" hidden></div>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link" id="mobile-nav-home">Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link" id="mobile-nav-services">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link" id="mobile-nav-about">About Us</a></li>
+      <li><a href="products.html" class="mobile-nav-link" id="mobile-nav-products">Products</a></li>
+      <li><a href="whyus.html" class="mobile-nav-link" id="mobile-nav-why">Why Us</a></li>
+      <li><a href="contact.html" class="mobile-nav-link active" id="mobile-nav-contact">Contact</a></li>
+      <li><a href="contact.html" class="btn btn-primary" id="mobile-nav-quote">Get a Quote</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== CONTACT CONTENT ===== -->
+  <main style="padding-top: 10px;">
+    <!-- Banner -->
+    <section class="contact-banner" style="background: linear-gradient(rgba(15,23,42,0.9), rgba(15,23,42,0.95)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover; padding: 100px 0 60px 0; text-align: center; color: #fff;">
+      <div class="container">
+        <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 700; margin-bottom: 12px; color: #fff;">Connect with Stonex</h1>
+        <p style="font-size: 18px; color: var(--text-muted); max-width: 600px; margin: 0 auto;">Reach out to our engineering sales teams for product quotes, machinery hire bookings, or compliance guidance.</p>
+      </div>
+    </section>
+
+    <!-- Contact Block & Form -->
+    <section class="contact section" id="contact" style="background: var(--dark); padding: 60px 0;">
+      <div class="container contact-grid" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: start;">
+        
+        <!-- Info column -->
+        <div class="contact-info-panel" style="background: var(--surface); border: 1px solid var(--border); padding: 30px; border-radius: var(--radius);">
+          <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; color: var(--text); margin-bottom: 20px;">Headquarters Info</h3>
+          <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 30px;">Stop by our Al Jubail headquarters, call us during work hours, or submit an email with detailed project specs for a customized quotation.</p>
+
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <span style="font-size: 20px; background: rgba(249,115,22,0.1); padding: 10px; border-radius: 6px; color: var(--color-primary);">📞</span>
+              <div>
+                <strong style="color: var(--text); display: block; font-size: 14px;">Phone Support</strong>
+                <a href="tel:+966500000000" id="contact-phone-link" style="color: var(--text-muted); font-size: 14px; text-decoration: none;">+966 50 000 0000</a>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <span style="font-size: 20px; background: rgba(249,115,22,0.1); padding: 10px; border-radius: 6px; color: var(--color-primary);">📧</span>
+              <div>
+                <strong style="color: var(--text); display: block; font-size: 14px;">Email Contacts</strong>
+                <a href="mailto:info@stonextrading.com" id="contact-email-link" style="color: var(--text-muted); font-size: 14px; text-decoration: none;">info@stonextrading.com</a>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <span style="font-size: 20px; background: rgba(249,115,22,0.1); padding: 10px; border-radius: 6px; color: var(--color-primary);">📍</span>
+              <div>
+                <strong style="color: var(--text); display: block; font-size: 14px;">Project Location</strong>
+                <span id="contact-address" style="color: var(--text-muted); font-size: 14px;">Industrial Area, Al Jubail, Saudi Arabia</span>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 15px;">
+              <span style="font-size: 20px; background: rgba(249,115,22,0.1); padding: 10px; border-radius: 6px; color: var(--color-primary);">🕐</span>
+              <div>
+                <strong style="color: var(--text); display: block; font-size: 14px;">Working Hours</strong>
+                <span id="contact-hours" style="color: var(--text-muted); font-size: 14px;">Sun–Thu: 8:00 AM – 6:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form column -->
+        <div class="contact-form-panel" style="background: var(--surface); border: 1px solid var(--border); padding: 40px; border-radius: var(--radius);">
+          <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 700; color: var(--text); margin-bottom: 20px;">Send a Quote Request</h3>
+          
+          <form id="quote-request-form" style="display: flex; flex-direction: column; gap: 16px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <label style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Your Name *</label>
+                <input type="text" id="quote-name" placeholder="Full Name" required style="background: var(--dark); border: 1px solid var(--border); padding: 10px 14px; border-radius: 6px; color: var(--text); font-size: 14px;" />
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <label style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Phone / Contact *</label>
+                <input type="text" id="quote-phone" placeholder="Contact number" required style="background: var(--dark); border: 1px solid var(--border); padding: 10px 14px; border-radius: 6px; color: var(--text); font-size: 14px;" />
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <label style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Email Address *</label>
+              <input type="email" id="quote-email" placeholder="name@company.com" required style="background: var(--dark); border: 1px solid var(--border); padding: 10px 14px; border-radius: 6px; color: var(--text); font-size: 14px;" />
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <label style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Interested Service / Category *</label>
+              <select id="quote-service" style="background: var(--dark); border: 1px solid var(--border); padding: 10px 14px; border-radius: 6px; color: var(--text); font-size: 14px;">
+                <option value="trading">Industrial Trading</option>
+                <option value="equipment">Heavy Equipment Rental</option>
+                <option value="civil">Civil Material Supply</option>
+                <option value="ppe">PPE Items</option>
+              </select>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <label style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Project / Delivery Address *</label>
+              <input type="text" id="quote-address" placeholder="Where do you need delivery?" required style="background: var(--dark); border: 1px solid var(--border); padding: 10px 14px; border-radius: 6px; color: var(--text); font-size: 14px;" />
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <label style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Detailed Message / Specifications</label>
+              <textarea id="quote-message" placeholder="List products, sizes, quantities, or lease duration..." rows="5" style="background: var(--dark); border: 1px solid var(--border); padding: 12px 14px; border-radius: 6px; color: var(--text); font-size: 14px; resize: vertical;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px; width: 100%; text-align: center;">Submit Quote Request</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" id="footer-logo-link" style="margin-bottom:16px">
+            <div class="logo-icon">
+              <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                <polygon points="20,2 38,35 2,35" fill="url(#logoGradFoot)" />
+                <defs>
+                  <linearGradient id="logoGradFoot" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#F97316"/>
+                    <stop offset="100%" style="stop-color:#DC2626"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">STONEX</span>
+              <span class="logo-tagline">Industrial Solutions</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">Your trusted partner for industrial trading, heavy equipment rentals, civil material supply, and premium PPE products.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook" id="footer-fb" class="footer-social-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="LinkedIn" id="footer-li" class="footer-social-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html" id="footer-link-industrial">Industrial Trading</a></li>
+            <li><a href="services.html" id="footer-link-equipment">Equipment Rental</a></li>
+            <li><a href="services.html" id="footer-link-civil">Civil Material Supply</a></li>
+            <li><a href="services.html" id="footer-link-ppe">PPE Items</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" id="footer-link-about">About Us</a></li>
+            <li><a href="products.html" id="footer-link-products">Products</a></li>
+            <li><a href="whyus.html" id="footer-link-why">Why Choose Us</a></li>
+            <li><a href="contact.html" id="footer-link-contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-links-title">Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li>📞 <a href="tel:+966500000000" id="footer-phone">+966 50 000 0000</a></li>
+            <li>📧 <a href="mailto:info@stonextrading.com" id="footer-email">info@stonextrading.com</a></li>
+            <li>📍 Industrial Area, Al Jubail, Saudi Arabia</li>
+            <li>🕐 Sun–Thu: 8:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 Stonex Industrial Solutions. All rights reserved.</p>
+        <p>Designed for excellence in industrial service delivery.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CHATBOT TRIGGER & WIDGET ===== -->
+  <button class="chatbot-trigger" id="chatbot-trigger-btn" aria-label="Open Chat">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <div class="chatbot-tooltip">Need help? Ask Stonex AI!</div>
+  </button>
+
+  <div id="ai-chatbot-widget" class="ai-chatbot-hidden">
+    <div class="chatbot-header">
+      <div class="chatbot-info">
+        <span class="chatbot-avatar-dot"></span>
+        <div class="chatbot-header-text">
+          <h4 id="chatbot-widget-title">Stonex AI Assistant</h4>
+          <p class="chatbot-header-status">Online • Ready to help</p>
+        </div>
+      </div>
+      <button class="chatbot-close-btn" id="chatbot-close-btn" aria-label="Close Chat">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <!-- Beautiful Lead Form inside Chatbot -->
+    <div id="chatbot-lead-form-container" class="chatbot-lead-form-container">
+      <div class="lead-form-header" id="chatbot-lead-form-toggle">
+        <span class="lead-form-title">⚡ Leave Your Contact / Get Quote</span>
+        <svg class="lead-form-arrow" id="lead-form-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <form id="chatbot-lead-form" class="chatbot-lead-form">
+        <div class="lead-input-group">
+          <input type="text" id="lead-name" placeholder="Full Name" required />
+          <input type="text" id="lead-contact" placeholder="Contact/Phone" required />
+        </div>
+        <input type="text" id="lead-address" placeholder="Project / Delivery Address" required />
+        <button type="submit" class="btn-lead-submit">Submit Details</button>
+      </form>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <!-- Chat bubbles injected via script.js -->
+    </div>
+    <form class="chatbot-input-area" id="chatbot-input-form">
+      <input type="text" id="chatbot-input-field" placeholder="Ask something..." autocomplete="off" required />
+      <button type="submit" id="chatbot-send-btn" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <!-- Main JavaScript as Module -->
+  <script type="module" src="script.js"></script>
+
+  <!-- Interactive Form Handling JS -->
+  <script>
+    // Handle pre-selected service URL parameters
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const service = params.get('service');
+      if (service) {
+        const select = document.querySelector('select');
+        if (select) {
+          select.value = service;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
